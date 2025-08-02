@@ -58,6 +58,7 @@ class BinaryVisualizer:
         img = Image.new("RGB", (width, height))
         entropy_map = {}
 
+# Divide block_size by 2 to get the dimension of each block in pixels.        
         for i in range(size):
             byte = data[i]
             x = i % width
